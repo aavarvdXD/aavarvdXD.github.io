@@ -1,0 +1,15 @@
+body {
+    background-color: #111;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    text-align: center;
+}
+button {
+    font-family: inherit;
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(180deg, #0f172a, #020617);
+}

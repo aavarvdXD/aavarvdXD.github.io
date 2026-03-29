@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Qorym</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Iosevka Charon", monospace;
+            background: linear-gradient(35deg, #4a7dbc, #0F172A);
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #1f2937;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .navlinks a {
+            color: #9ca3af;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+
+        .navlinks a:hover {
+            color: white;
+        }
+
+        /* HERO */
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #9ca3af;
+            font-size: 16px;
+        }
+
+        /* IMAGE SHOWCASE */
+
+        .showcase {
+            width: 100%;
+            height: 500px;
+            background-image: url("hero-image.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* WHO WE ARE */
+
+        .section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            color: #9ca3af;
+            font-size: 16px;
+        }
+
+        /* BRANCH GRID */
+
+        .branches {
+            display: grid;
+            grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .branch {
+            background: #111827;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #1f2937;
+            transition: 0.2s;
+        }
+
+        .branch:hover {
+            transform: translateY(-5px);
+            border-color: #2563eb;
+        }
+
+        .branch img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* IMAGE STRIP */
+
+        .image-strip {
+            display: grid;
+            grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .image-strip img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid #1f2937;
+            color: #a2a7b1;
+            font-size: 13px;
+            margin-top: 80px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">Qorym</div>
+
+    <div class="navlinks">
+        <a href="#">Our Team</a>
+        <a href="#">Documentation</a>
+        <a href="#branches">Our Branches</a>
+    </div>
+
+</nav>
+
+<section class="hero">
+
+    <h1>Qorym</h1>
+
+    <p>
+        Independent studio building software, games, and digital art.
+    </p>
+
+</section>
+
+<div class="showcase"></div>
+
+<section class="section">
+
+    <h2>Who We Are</h2>
+
+    <p>
+        Qorym is an independent development studio focused on creating tools,
+        games, and creative projects. Our goal is to build software that is fast,
+        minimal, and designed with developers and creators in mind.
+    </p>
+
+</section>
+
+<section class="section" id="branches">
+
+    <h2>Our Branches</h2>
+
+    <div class="branches">
+
+        <div class="branch">
+            <img src="software.png">
+            <h3>Qorym Software</h3>
+            <p>
+                Developer tools and productivity software focused on simplicity and performance.
+            </p>
+        </div>
+
+        <div class="branch">
+            <img src="games.png">
+            <h3>Qorym Games</h3>
+            <p>
+                Pixel-art games and experimental interactive worlds.
+            </p>
+        </div>
+
+        <div class="branch">
+            <img src="art.png">
+            <h3>Qorym Art</h3>
+            <p>
+                Visual design, pixel art, and creative digital works.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>Projects & Creations</h2>
+
+    <div class="image-strip">
+
+        <img src="project1.png">
+        <img src="project2.png">
+        <img src="project3.png">
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <p>Qorym • Everything you need</p>
+    <p>Copyright © 2026 Qorym Studios</p>
+
+</footer>
+
+</body>
+</html>
