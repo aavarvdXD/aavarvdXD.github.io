@@ -123,6 +123,14 @@
             margin-bottom: 15px;
         }
 
+        .branch.clickable {
+            curosr: pointer;
+        }
+
+        .branch.clickable:hover {
+            transform: translateY(-5px) scale(1.04);
+        }
+
         /* IMAGE STRIP */
 
         .image-strip {
@@ -195,14 +203,14 @@
 
     <div class="branches">
 
-        <div class="branch">
+        <div class="branch clickable" onclick="window.location.href='/software/'">
             <img src="software.png">
             <h3>Qorym Software</h3>
             <p>
                 Developer tools and productivity software focused on simplicity and performance.
             </p>
         </div>
-
+        
         <div class="branch">
             <img src="games.png">
             <h3>Qorym Games</h3>
